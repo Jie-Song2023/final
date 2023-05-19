@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  border: 5px solid green;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  background-color: rgb(120, 154, 69);
+}
+
+#logo-container img {
+  width: 200px;
+  height: 100px;
+}
+header {
+  margin-top: 20px;
+  display: flex;
+  margin-right: 50px;
+}
+nav {
+  float: left;
+  list-style: none;
+}
+nav ul {
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  width: 150px;
+  border: 2px solid rgb(38, 97, 18);
+  line-height: 3em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: small-caps;
+}
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  border: 1px solid rgb(3, 80, 19);
+  display: block;
+}
+
+aside {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+aside li {
+  margin-left: 30px;
+  margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+aside li a {
+	color: #090909;
+	text-decoration: none;
+}
+
+header.left-column {
+  flex-direction: column;
+  flex: 15%;
+}
+
+.header.right-column {
+  flex: 85%;
+}
+
+.self-box {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.left-column {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 25%;
+}
+
+.right-column {
+  margin-left: 40px;
+  flex: 65%;
+}
+
+.overlay {
+  background-color: rgb(255, 255, 255, .5);
+}
+
+.top-box, .bottom-box {
+  height: 250px;
+  margin-bottom: 14px;
+}
+
+.single-box {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 510px;
+  background-image: url(../images/jadeBackground.jpg);
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+h4 {
+  margin-left: 10px;
+}
+
+p {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.top-box {
+  background-color: rgb(246, 165, 165);
+}
+
+.single-box {
+  background-color: rgb(247, 247, 251);
+}
+
+
+footer {
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  align-items: left;
+}
+
+footer li {
+  margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+footer li a {
+	color: #090909;
+	text-decoration: none;
+}
+
+footer .newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer .newsletter input[type="email"] {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+footer .newsletter button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .column {
+  flex-basis: 18%;
+  margin-bottom: 5px;
+}
+
+/* Styles for screens smaller than or equal to 480px */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Styles for screens between 481px and 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .menu {
+    width: 50%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Styles for screens larger than 768px */
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .menu {
+    width: 30%;
+  }
+
+  .sidebar {
+    display: block;
+  }
+}
